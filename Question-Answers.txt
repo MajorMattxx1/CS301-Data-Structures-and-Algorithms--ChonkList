@@ -1,0 +1,25 @@
+1. What is the advantage of the ChunkList approach as opposed to the link list implementation given in Chapter 4? 
+	The ChunkList approach can hold far more values per node than the given link list implementation.
+	Less memory is likely also being used.
+
+
+2. What would be the implications of increasing the size of ARRAY_SIZE to a very large value?
+	Each ChunkList node would be able to hold very large values, which would increase the per node memory usage,
+	and increases runtimes for functions which base their loop calculations on ARRAY_SIZE.
+ 
+
+3. What is the big O of:
+• Append: O(1) - no loops
+• GetLength: O(1) - no loops
+• GetIndex: O(n) - depends on how large the linked list is
+• Search: O(n) - depends on how large the linked list is
+• Print: approximately 50/50 chance between O(n) and O(∞) | if Print worked properly, it'd just be O(n)
+• Remove: O(constant) - the only loop is based on the constant value of ARRAY_SIZE 
+• IsEmpty: O(1) - no loops
+ 
+4. Compare placing a new element into the FIRST available empty space versus placing a new element in the tail chunk. 
+What are the advantages and disadvantages to automatically placing values at the tail node?
+	First advantage of placing values at the tail node is speed, it would take quite a lot more time to search through the
+	ChunkList to find the first empty space. Second advantage of tail node is likely the comparative lack of complexity. 
+	It seems tricky to find an empty space within an array, depending on who you ask.
+	However, one advantage for finding first empty space is that it is more efficient. 

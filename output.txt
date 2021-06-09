@@ -1,0 +1,14 @@
+Appending 7
+Appending 64
+Appending 54
+Appending 363
+7 0 64 54 
+Length: 4
+7 exists in index 0
+0 exists in index 1
+64 exists in index 2
+64 exists in list
+Removing 64
+64 exists in list
+Length: 3
+7 0 64 

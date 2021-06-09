@@ -1,0 +1,18 @@
+append 7
+append 64
+append 54
+append 363
+print
+getlength
+getindex 0
+getindex 1
+getindex 2
+
+search 64
+remove 64
+search 64
+
+getlength
+print
+
+quit
